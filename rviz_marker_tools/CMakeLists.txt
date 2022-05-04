@@ -1,13 +1,14 @@
 cmake_minimum_required(VERSION 3.5)
 project(rviz_marker_tools)
 
+find_package(Eigen3 REQUIRED)
+find_package(eigen3_cmake_module REQUIRED)
 find_package(geometry_msgs REQUIRED)
-find_package(visualization_msgs REQUIRED)
+find_package(liburdfdom-dev REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(rviz2 REQUIRED)
-find_package(eigen3_cmake_module REQUIRED)
-find_package(Eigen3 REQUIRED)
 find_package(tf2_eigen REQUIRED)
+find_package(visualization_msgs REQUIRED)
 
 if(NOT CMAKE_CXX_STANDARD)
   set(CMAKE_CXX_STANDARD 17)
